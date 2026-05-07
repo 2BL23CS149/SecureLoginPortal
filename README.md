@@ -1,9 +1,13 @@
 # Secure Login Portal using HttpSession
 
-## Student Details
+A simple Java Servlet-based web application that demonstrates user authentication and session management using HttpSession.
+
+---
+
+# Student Details
 
 | Field | Details |
-|------|------|
+|---|---|
 | Name | Soumya Pujari |
 | USN | 2BL23CS149 |
 | Branch | Computer Science & Engineering |
@@ -13,19 +17,24 @@
 
 ---
 
-## Problem Statement
+# Problem Statement
 
-This project is a Simple Login Web Application developed using Java Servlets and HttpSession.
+Develop a secure login portal using Java Servlets and HttpSession.
 
-The application accepts username and password from the user and validates them using hardcoded credentials. After successful login, session is created and the user is redirected to the dashboard page.
+The application should:
 
-Logout functionality invalidates the session and redirects the user back to the login page.
+- Accept username and password from the user
+- Validate login credentials
+- Create session after successful login
+- Redirect user to dashboard page
+- Invalidate session during logout
+- Redirect back to login page after logout
 
 ---
 
-## Technologies Used
+# Technologies Used
 
-- Java (Servlets)
+- Java Servlets
 - HTML
 - HttpSession
 - Apache Tomcat Server
@@ -33,69 +42,92 @@ Logout functionality invalidates the session and redirects the user back to the 
 
 ---
 
-## Screenshots
+# Valid Login Credentials
 
-### Login Page
+| Username | Password |
+|---|---|
+| admin | 1234 |
 
-[View Login Screenshot](screenshots/Screenshot%201.png)
+---
+
+# Screenshots
+
+## Login Page
+
+[View Screenshot](screenshots/Screenshot%201.png)
 
 ![Login Page](screenshots/Screenshot%201.png)
 
-### Dashboard Page
+---
 
-[View Dashboard Screenshot](screenshots/Screenshot%202.png)
+## Dashboard Page
+
+[View Screenshot](screenshots/Screenshot%202.png)
 
 ![Dashboard Page](screenshots/Screenshot%202.png)
 
 ---
 
-## How to Run This Project
+# Output Links
 
-1. Clone this repository or download the ZIP.
-2. Import the project into Eclipse as a Dynamic Web Project.
-3. Add Apache Tomcat Server in Eclipse.
-4. Right-click project → Run As → Run on Server.
-5. Open browser and go to:
+## Login Page
 
-[Open Login Page](http://localhost:8080/SecureLoginPortal/index.html)
+```text
+http://localhost:8080/SecureLoginPortal/index.html
+```
 
----
+## Dashboard Page
 
-## Valid Login Credentials
+```text
+http://localhost:8080/SecureLoginPortal/DashboardServlet
+```
 
-| Username | Password |
-|------|------|
-| admin | 1234 |
+## Logout Page
 
----
-
-## Output Links
-
-### Login Page
-
-[http://localhost:8080/SecureLoginPortal/index.html](http://localhost:8080/SecureLoginPortal/index.html)
-
-### Dashboard Page
-
-[http://localhost:8080/SecureLoginPortal/DashboardServlet](http://localhost:8080/SecureLoginPortal/DashboardServlet)
-
-### Logout Page
-
-[http://localhost:8080/SecureLoginPortal/UserLogoutServlet](http://localhost:8080/SecureLoginPortal/UserLogoutServlet)
+```text
+http://localhost:8080/SecureLoginPortal/UserLogoutServlet
+```
 
 ---
 
-## Features
+# How to Run This Project
 
-- User Login Authentication
-- Session Management using HttpSession
-- Dashboard Access after Login
+1. Download or clone the repository
+
+2. Open Eclipse IDE
+
+3. Import the project as Dynamic Web Project
+
+4. Configure Apache Tomcat Server
+
+5. Right click the project
+
+6. Select:
+
+```text
+Run As → Run on Server
+```
+
+7. Open browser and run:
+
+```text
+http://localhost:8080/SecureLoginPortal/index.html
+```
+
+---
+
+# Features
+
+- Secure Login Authentication
+- Session Handling using HttpSession
+- Dashboard Redirection
 - Logout Functionality
 - Invalid Login Handling
+- Simple Servlet-Based Web Application
 
 ---
 
-## Project Structure
+# Project Structure
 
 ```text
 SecureLoginPortal
@@ -119,13 +151,18 @@ SecureLoginPortal
 
 ---
 
-## Servlet Concepts Practiced
+# Servlet Concepts Practiced
 
-This project demonstrates:
+- HttpSession Creation
+- Session Invalidation
+- Login Authentication
+- Request Handling
+- Response Handling
+- Redirecting Between Pages
+- Dynamic HTML Response using Servlets
 
-- HttpSession handling
-- Session creation and invalidation
-- Login authentication using Servlets
-- Request and Response handling
-- Redirecting between pages
-- Dynamic dashboard generation
+---
+
+# Conclusion
+
+This project demonstrates a simple and secure login system using Java Servlets and HttpSession. It helps understand session tracking, authentication, servlet handling, and web application deployment using Apache Tomcat Server.
